@@ -15,12 +15,12 @@ const MyNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">About</Nav.Link>
-            <Nav.Link href="#link">Schedule</Nav.Link>
-            <Nav.Link href="#link">Venue</Nav.Link>
-            <Nav.Link href="#link">Rules</Nav.Link>
-            <Nav.Link href="#link">FAQ</Nav.Link>
-            <Nav.Link href="#link">Register</Nav.Link>
+            <Nav.Link href="/">About</Nav.Link>
+            <Nav.Link href="/venue">Venue</Nav.Link>
+            <Nav.Link href="/schedule">Schedule</Nav.Link>
+            <Nav.Link href="/rules">Rules</Nav.Link>
+            <Nav.Link href="/faq">FAQ</Nav.Link>
+            <Nav.Link href="/register">Register</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
