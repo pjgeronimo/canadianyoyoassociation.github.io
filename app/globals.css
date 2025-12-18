@@ -40,3 +40,17 @@ a {
     color-scheme: dark;
   }
 }
+
+.link {
+  color: #550000
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.socials-btn {
+  background-color: #550000 !important;
+  border-color: #550000 !important;
+}
+
