@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "react-bootstrap/Container";
+import Link from "next/link";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
@@ -14,7 +15,7 @@ const paths = [
   { name: "Schedule", href: "/schedule" },
   { name: "Rules", href: "/rules" },
   { name: "FAQ", href: "/faq" },
-  { name: "Register", href: "/register" }
+  { name: "Register", href: "/register" },
 ];
 
 const MyNavbar = () => {
@@ -23,21 +24,21 @@ const MyNavbar = () => {
   return (
     <Navbar expand="lg" className="navbar" variant="dark">
       <Container>
-        <Navbar.Brand href="/" className="navbar-brand">
-          #CanadaNats2026
-        </Navbar.Brand>
+        <Link href="/" passHref>
+          <Navbar.Brand className="navbar-brand">#CanadaNats2026</Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             {paths.map((path) => (
-              <Nav.Link
-                key={path.href}
-                href={path.href}
-                // trailing slashes removed in next.config.ts
-                active={pathname === path.href}
-              >
-                {path.name}
-              </Nav.Link>
+              <Link key={path.href} href={path.href} passHref>
+                <Nav.Link
+                  // trailing slashes removed in next.config.ts
+                  active={pathname === path.href}
+                >
+                  {path.name}
+                </Nav.Link>
+              </Link>
             ))}
           </Nav>
         </Navbar.Collapse>

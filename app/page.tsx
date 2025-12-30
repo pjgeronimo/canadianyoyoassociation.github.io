@@ -13,7 +13,7 @@ export default function Home() {
         <Row>
           <Col>
             <Image
-              src="/assets/logos/2026natslogo.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/logos/2026natslogo.png`}
               alt="2026 Canadian Nationals Logo"
               width="40%"
             />

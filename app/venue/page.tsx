@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 
 export const metadata: Metadata = {
   title: "Venue",
@@ -31,7 +31,11 @@ const Venue = () => {
           href="https://calgarylibrary.ca/read-learn-and-explore/central-library/"
           target="_blank"
         >
-          <img src="/2024/CL.jpg" alt="Central Library Calgary" width="800" />
+          <Image
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2024/CL.jpg`}
+            alt="Central Library Calgary"
+            width="800"
+          />
         </a>
         <p>Image Source: Central Library</p>
       </div>
@@ -75,7 +79,10 @@ const Venue = () => {
         for tables with vendors and products.
       </p>
       <div>
-        <img src="/2024/PerfHall_sm.jpg" alt="Performance Hall" />
+        <Image
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2024/PerfHall_sm.jpg`}
+          alt="Performance Hall"
+        />
         <p>Image Source: Central Library</p>
       </div>
       <p>
@@ -102,7 +109,11 @@ const Venue = () => {
         can click and check the detail for each street parking lane.
       </p>
       <a href="https://arcg.is/8DLaX" target="_blank">
-        <img src="/2024/parking.png" alt="Parking Illustration" width="800" />
+        <Image
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2024/parking.png`}
+          alt="Parking Illustration"
+          width="800"
+        />
       </a>
       <p>
         <a href="https://arcg.is/8DLaX" target="_blank">
@@ -122,7 +133,11 @@ const Venue = () => {
         href="https://weather.gc.ca/city/pages/ab-52_metric_e.html"
         target="_blank"
       >
-        <img src="/2024/weather.png" alt="Weather Forecast" width="800" />
+        <Image
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2024/weather.png`}
+          alt="Weather Forecast"
+          width="800"
+        />
       </a>
       <p>
         <a
