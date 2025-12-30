@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
 
   // remove trailing slash for navbar active highlight
   trailingSlash: false,
+
+  basePath: process.env.PAGES_BASE_PATH,
 };
 
 export default nextConfig;
