@@ -24,21 +24,26 @@ const MyNavbar = () => {
   return (
     <Navbar expand="lg" className="navbar" variant="dark">
       <Container>
-        <Link href="/" passHref>
-          <Navbar.Brand className="navbar-brand">#CanadaNats2026</Navbar.Brand>
-        </Link>
+        <Navbar.Brand href="/" className="navbar-brand" as={Link}>
+          #CanadaNats2026
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             {paths.map((path) => (
-              <Link key={path.href} href={path.href} passHref>
-                <Nav.Link
-                  // trailing slashes removed in next.config.ts
-                  active={pathname === path.href}
-                >
-                  {path.name}
-                </Nav.Link>
-              </Link>
+              <Nav.Link
+                key={path.href}
+                href={path.href}
+                //
+                // trailing slashes removed in next.config.ts
+                active={pathname === path.href}
+                //
+                // fix react-bootstrap not reading base path
+                // https://github.com/react-bootstrap/react-bootstrap/issues/4131#issuecomment-551964379
+                as={Link}
+              >
+                {path.name}
+              </Nav.Link>
             ))}
           </Nav>
         </Navbar.Collapse>

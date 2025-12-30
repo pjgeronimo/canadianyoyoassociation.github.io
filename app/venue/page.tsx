@@ -43,8 +43,8 @@ const Venue = () => {
         2024 Canadian Nationals will be at Central Library. The venue is known
         for its aesthetics and ease of access thanks to its location nearby a
         city's light-rail train station. The event will be held in the{" "}
-        <strong>Performance Hall</strong>
-        located on the first floor of the library.
+        <strong>Performance Hall</strong> located on the first floor of the
+        library.
       </p>
 
       <p>

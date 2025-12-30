@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
   // set base path and asset prefix for GitHub Pages
   basePath: process.env.PAGES_BASE_PATH,
   env: {
-    NEXT_PUBLIC_BASE_PATH: process.env.PAGES_BASE_PATH,
+    NEXT_PUBLIC_BASE_PATH: process.env.PAGES_BASE_PATH || "",
   },
 };
 
