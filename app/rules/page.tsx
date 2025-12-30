@@ -2,6 +2,11 @@ import Container from "react-bootstrap/Container";
 import Link from "next/link";
 import Table from "react-bootstrap/Table";
 import Alert from "react-bootstrap/Alert";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Rules",
+};
 
 const Rules = () => {
   return (

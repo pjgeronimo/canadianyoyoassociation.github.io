@@ -1,5 +1,10 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "react-bootstrap";
+
+export const metadata: Metadata = {
+  title: "FAQ",
+};
 
 const Faq = () => {
   return (

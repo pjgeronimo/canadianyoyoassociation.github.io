@@ -1,6 +1,11 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
 import { Container, Table } from "react-bootstrap";
+
+export const metadata: Metadata = {
+  title: "Schedule",
+};
 
 const Schedule = () => {
   return (

@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import { Container } from "react-bootstrap";
+
+export const metadata: Metadata = {
+  title: "Results",
+};
 
 const Results = () => {
   return (
