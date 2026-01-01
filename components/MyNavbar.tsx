@@ -1,13 +1,8 @@
 "use client";
 
-import Container from "react-bootstrap/Container";
 import Link from "next/link";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-
 import { usePathname } from "next/navigation";
-
-import "./styles.css";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 const paths = [
   { name: "About", href: "/" },

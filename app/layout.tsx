@@ -1,20 +1,10 @@
 import { GoogleTagManager } from "@next/third-parties/google";
-
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import MyNavbar from "@/components/MyNavbar";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import MyNavbar from "@/components/MyNavbar";
+import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title: {
@@ -70,9 +60,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-bs-theme="light">
       <GoogleTagManager gtmId="GTM-MJZ4QWRJ" />
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         <MyNavbar />
         {children}
       </body>
