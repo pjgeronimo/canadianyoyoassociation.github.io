@@ -5,12 +5,12 @@ import { usePathname } from "next/navigation";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 const paths = [
-  { name: "About", href: "/" },
-  { name: "Venue", href: "/venue" },
-  { name: "Schedule", href: "/schedule" },
-  { name: "Rules", href: "/rules" },
-  { name: "FAQ", href: "/faq" },
-  { name: "Register", href: "/register" },
+  { name: "About", href: "/", active: new Set(["/", "/index"]) },
+  { name: "Venue", href: "/venue", active: new Set(["/venue"]) },
+  { name: "Schedule", href: "/schedule", active: new Set(["/schedule"]) },
+  { name: "Rules", href: "/rules", active: new Set(["/rules"]) },
+  { name: "FAQ", href: "/faq", active: new Set(["/faq"]) },
+  { name: "Register", href: "/register", active: new Set(["/register"]) },
 ];
 
 const MyNavbar = () => {
@@ -31,7 +31,7 @@ const MyNavbar = () => {
                 href={path.href}
                 //
                 // trailing slashes removed in next.config.ts
-                active={pathname === path.href}
+                active={path.active.has(pathname)}
                 //
                 // fix react-bootstrap not reading base path
                 // https://github.com/react-bootstrap/react-bootstrap/issues/4131#issuecomment-551964379

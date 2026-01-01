@@ -81,7 +81,7 @@ export default function CanyaFooter() {
     <footer>
       <Container>
         <Row className="text-center">
-          {pathname === "/"
+          {pathname === "/" || pathname === "/index"
             ? renderSponsorsLarge(gold, silver)
             : renderSponsorsSmall(gold)}
         </Row>
