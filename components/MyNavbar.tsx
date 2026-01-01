@@ -5,12 +5,20 @@ import { usePathname } from "next/navigation";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 const paths = [
-  { name: "About", href: "/", active: new Set(["/", "/index"]) },
-  { name: "Venue", href: "/venue", active: new Set(["/venue"]) },
-  { name: "Schedule", href: "/schedule", active: new Set(["/schedule"]) },
-  { name: "Rules", href: "/rules", active: new Set(["/rules"]) },
-  { name: "FAQ", href: "/faq", active: new Set(["/faq"]) },
-  { name: "Register", href: "/register", active: new Set(["/register"]) },
+  { name: "About", href: "/", active: new Set(["/", "/index", "/index.html"]) },
+  { name: "Venue", href: "/venue", active: new Set(["/venue", "/venue.html"]) },
+  {
+    name: "Schedule",
+    href: "/schedule",
+    active: new Set(["/schedule", "/schedule.html"]),
+  },
+  { name: "Rules", href: "/rules", active: new Set(["/rules", "/rules.html"]) },
+  { name: "FAQ", href: "/faq", active: new Set(["/faq", "/faq.html"]) },
+  {
+    name: "Register",
+    href: "/register",
+    active: new Set(["/register", "/register.html"]),
+  },
 ];
 
 const MyNavbar = () => {

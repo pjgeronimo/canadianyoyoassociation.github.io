@@ -81,9 +81,12 @@ export default function CanyaFooter() {
     <footer>
       <Container>
         <Row className="text-center">
-          {pathname === "/" || pathname === "/index"
-            ? renderSponsorsLarge(gold, silver)
-            : renderSponsorsSmall(gold)}
+          {
+            // Distinguish between home page and other pages
+            new Set(["/", "/index", "/index.html"]).has(pathname)
+              ? renderSponsorsLarge(gold, silver)
+              : renderSponsorsSmall(gold)
+          }
         </Row>
       </Container>
     </footer>
