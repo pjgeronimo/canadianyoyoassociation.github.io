@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import MyNavbar from "@/components/MyNavbar";
 import "@/app/globals.css";
+import CanyaFooter from "@/components/CanyaFooter";
+import MyNavbar from "@/components/MyNavbar";
 
 export const metadata: Metadata = {
   title: {
@@ -65,6 +66,7 @@ export default function RootLayout({
       <body>
         <MyNavbar />
         {children}
+        <CanyaFooter />
       </body>
     </html>
   );
