@@ -12,11 +12,11 @@ html {
 }
 
 .navbar {
-    background-color: #550000;
+  background-color: #550000;
 }
 
 .link {
-  color: #550000
+  color: #550000;
 }
 
 .link:hover {
@@ -26,4 +26,14 @@ html {
 .socials-btn {
   background-color: #550000 !important;
   border-color: #550000 !important;
+}
+
+footer .large-gold {
+  margin: 20px;
+}
+footer .large-silver {
+  margin: 15px;
+}
+footer .small-gold {
+  margin: 10px;
 }

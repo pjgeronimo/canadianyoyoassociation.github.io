@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Col, Container, Image, Row } from "react-bootstrap";
 
 import { Sponsor, sponsorsGold, sponsorsSilver } from "@/components/sponsors";
+import useWindowWidth from "@/components/useWindowWidth";
 import { useEffect, useState } from "react";
 
 /**
@@ -27,33 +28,37 @@ function renderSponsor(sponsor: Sponsor, scale: number, className: string) {
       <Image
         src={sponsor.img}
         alt={sponsor.name}
-        width={scale * sponsor.size}
+        width={`${scale * sponsor.size}px`}
         className={className}
       />
     </Link>
   );
 }
 
-function renderSponsorsLarge(gold: Sponsor[], silver: Sponsor[]) {
-  const scaleGold = 0.6;
-  const scaleSilver = 0.3;
+function renderSponsorsLarge(
+  gold: Sponsor[],
+  silver: Sponsor[],
+  windowWidth?: number
+) {
+  let scaleGold = 0.6;
+  let scaleSilver = 0.3;
 
-  // // TODO
-  // scale_gold = 0.6;
-  // scale_silver = 0.3;
-  // screen_width = $(document).width();
-  // if (screen_width < 700) {
-  //     scale_gold = 0.36;
-  //     scale_silver = 0.24;
-  // }
+  if (windowWidth && windowWidth < 768) {
+    scaleGold = 0.36;
+    scaleSilver = 0.24;
+  }
 
   return (
     <Col>
       <h1>Sponsors</h1>
-      {gold.map((sponsor) => renderSponsor(sponsor, scaleGold, "large-gold"))}
-      {silver.map((sponsor) =>
-        renderSponsor(sponsor, scaleSilver, "large-silver")
-      )}
+      <div>
+        {gold.map((sponsor) => renderSponsor(sponsor, scaleGold, "large-gold"))}
+      </div>
+      <div>
+        {silver.map((sponsor) =>
+          renderSponsor(sponsor, scaleSilver, "large-silver")
+        )}
+      </div>
     </Col>
   );
 }
@@ -69,6 +74,7 @@ function renderSponsorsSmall(gold: Sponsor[]) {
 
 export default function CanyaFooter() {
   const pathname = usePathname();
+  const windowWidth = useWindowWidth();
 
   const [gold, setGold] = useState(sponsorsGold);
   const [silver, setSilver] = useState(sponsorsSilver);
@@ -84,7 +90,7 @@ export default function CanyaFooter() {
           {
             // Distinguish between home page and other pages
             new Set(["/", "/index", "/index.html"]).has(pathname)
-              ? renderSponsorsLarge(gold, silver)
+              ? renderSponsorsLarge(gold, silver, windowWidth)
               : renderSponsorsSmall(gold)
           }
         </Row>
