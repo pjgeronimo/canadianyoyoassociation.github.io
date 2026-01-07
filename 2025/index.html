@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Canadian Nationals 2025: July 5 in Toronto</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="bootsnav.css" >	
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<meta name="description" content="Canadian Nationals 2025" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="keywords" content="yo-yo, yoyo, yoyos, toronto, yoyoing, canada, ontario, return top, competition, championship, contest, national, nationals"/>
+<meta property="og:image" content="https://canadanationals.com/lib/assets/FBpreview.jpg" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+#result-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.result-box {
+    display: inline-block;
+    margin-right: 50px;
+    text-align: left;
+}
+
+#content {
+    padding-bottom: 100px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="results.html">Results</a></li>
+                    <li><a href="venue.html">Venue</a></li>
+                    <li><a href="format.html">Format</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul><!--/.nav -->
+            </div><!-- /.navbar-collapse -->
+        </div><!--/.container-->
+    </nav><!--/nav-->
+    
+    <div id="welcome">
+        <img src="lib/assets/logo_800.png" alt="Canadian Nationals 2025" />
+        <h1>SATURDAY JULY 5<br/>TORONTO ON</h1>
+        <span id="hashtag">#CanadaNats2025</span>
+    </div>
+    
+
+    <div id="content">
+	
+		<h1>Performance order and results</h1>
+        <a id="results-button" href="results.html">Results</a>
+
+       
+        <h1>About Canadian Nationals 2025</h1>
+        <p>Welcome to the official website of the Canadian National Return Top Championship 2025! Some of the finest return top players from all over Canada
+        will be competing for this year's nationals titles in Toronto on Saturday July 5. As a member organization of the
+        <a href="https://iyyf.org/" target="_blank">International Yo-Yo Federation (IYYF)</a>,
+        the winners of Canadian Nationals will be seeded to the <a href="https://wyyc2025.com/" target="_blank">World YoYo Contest 2025</a>.
+        </p>
+        <p>This event is family-friendly and open to the public for free. Spectators may enter this event without admission fees.
+        Contestants must <a href="register.html">register here</a>.</p>
+        
+        <p>The social media hashtag is <strong>#CanadaNats2025</strong>. To receive the latest updates or get in touch with us, make sure to follow CANYA on social media.</p>
+        <a id="socials-button" href="https://linktr.ee/canadianyoyoassociation" target="_blank">&#64;canadianyoyoassociation</a>
+		
+        <div id="gold-sponsor-logos">
+            <h1>Sponsors</h1>
+        </div>
+        
+        <div id="sponsor-logos"></div>
+
+
+    </div>
+    
+	<script src="jquery.js"></script>	
+    <script src="bootstrap.min.js"></script>
+    <script src="bootsnav.js"></script>
+    <script src="sponsors.js"></script>
+    <script>
+        scale_gold = 0.6;
+        scale_silver = 0.3;
+        screen_width = $(document).width();
+        if (screen_width < 700) {
+            scale_gold *= 0.6;
+            scale_silver *= 0.8;
+        }
+        loadGoldSponsors("gold-sponsor-logos", scale_gold);
+        
+        loadSilverSponsors("sponsor-logos", scale_silver);
+    </script>
+
+
+</body>
+
+</html>
+
