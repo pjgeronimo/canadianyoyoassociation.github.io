@@ -21,7 +21,7 @@ const paths = [
   },
 ];
 
-const MyNavbar = () => {
+const CanyaNavbar = () => {
   const pathname = usePathname();
 
   return (
@@ -55,4 +55,4 @@ const MyNavbar = () => {
   );
 };
 
-export default MyNavbar;
+export default CanyaNavbar;

@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import "@/app/globals.css";
 import CanyaFooter from "@/components/CanyaFooter";
-import MyNavbar from "@/components/MyNavbar";
+import CanyaNavbar from "@/components/CanyaNavbar";
 
 export const metadata: Metadata = {
   title: {
@@ -64,7 +64,7 @@ export default function RootLayout({
     <html lang="en" data-bs-theme="light">
       <GoogleTagManager gtmId="GTM-MJZ4QWRJ" />
       <body>
-        <MyNavbar />
+        <CanyaNavbar />
         {children}
         <CanyaFooter />
       </body>
