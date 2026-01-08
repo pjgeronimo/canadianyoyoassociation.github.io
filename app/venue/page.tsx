@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Container, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 
 export const metadata: Metadata = {
   title: "Venue",
@@ -7,13 +7,9 @@ export const metadata: Metadata = {
 
 const Venue = () => {
   return (
-    <Container>
-      <p>
-        <strong>Updated as of May 15</strong>
-      </p>
-      <h1>
-        <div>Located at</div>Central Library of Calgary
-      </h1>
+    <>
+      <strong>Updated as of May 15</strong>
+      <h1>Calgary Central Library</h1>
 
       <p>
         800 3 St SE, Calgary, AB, T2G 2E7
@@ -40,9 +36,10 @@ const Venue = () => {
         <p>Image Source: Central Library</p>
       </div>
       <p>
-        2024 Canadian Nationals will be at Central Library. The venue is known
-        for its aesthetics and ease of access thanks to its location nearby a
-        city's light-rail train station. The event will be held in the{" "}
+        2026 Canadian Nationals will be at the Central Library. The venue is
+        known for its aesthetics and ease of access thanks to its location
+        nearby the Westbound and Eastbound City Hall/Bow Valley College train
+        stations. The event will be held in the{" "}
         <strong>Performance Hall</strong> located on the first floor of the
         library.
       </p>
@@ -147,7 +144,7 @@ const Venue = () => {
           Calgary Weather Forecast provided by Government of Canada
         </a>
       </p>
-    </Container>
+    </>
   );
 };
 

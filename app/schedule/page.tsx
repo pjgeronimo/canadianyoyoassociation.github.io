@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import React from "react";
-import { Container, Table } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 
 export const metadata: Metadata = {
   title: "Schedule",
@@ -9,7 +8,7 @@ export const metadata: Metadata = {
 
 const Schedule = () => {
   return (
-    <Container>
+    <>
       <h1>Schedule</h1>
 
       <p>
@@ -67,7 +66,7 @@ const Schedule = () => {
       >
         @canadianyoyoassociation
       </Link>
-    </Container>
+    </>
   );
 };
 

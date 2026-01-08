@@ -9,21 +9,9 @@ import Col from "react-bootstrap/Col";
 export default function Home() {
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/assets/web_bg.jpg)`,
-        }}
-      >
-        <Image
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/2026natslogo.png`}
-          alt="2026 Canadian Nationals Logo"
-          width="40%"
-        />
-        <h1>May 17th, 2026</h1>
-        <h1>Calgary, AB</h1>
-      </div>
-      <Container className="text-center">
-        <Row>
+      <Row>
+        <Col>
+          <h1>About Canadian Nationals 2026</h1>
           <p>
             Welcome to the official website of the Canadian National Return Top
             Championship 2026! Some of the finest return top players from all
@@ -50,16 +38,19 @@ export default function Home() {
             To keep up to date or get in touch with us, use the hashtag
             #CanadaNats2026 and follow us on social media
           </p>
-        </Row>
+        </Col>
+      </Row>
 
-        <Button
-          href="https://linktr.ee/canadianyoyoassociation"
-          className="socials-btn"
-          target="_blank"
-        >
-          @canadianyoyoassociation
-        </Button>
-      </Container>
+      <Row className="text-center">
+        <Col>
+          <Button
+            href="https://linktr.ee/canadianyoyoassociation"
+            target="_blank"
+          >
+            @canadianyoyoassociation
+          </Button>
+        </Col>
+      </Row>
     </>
   );
 }

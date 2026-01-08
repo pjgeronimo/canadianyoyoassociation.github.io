@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Container, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 
 export const metadata: Metadata = {
   title: "Results",
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 const Results = () => {
   return (
-    <Container>
+    <>
       <h1>Results - 1A division Finals</h1>
       <p>i win 😎</p>
       <Image
@@ -39,7 +39,7 @@ const Results = () => {
         src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2025/result_files/results_1Aprelim.png`}
         width="800px"
       />
-    </Container>
+    </>
   );
 };
 

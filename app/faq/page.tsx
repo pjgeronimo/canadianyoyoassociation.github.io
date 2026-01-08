@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Container } from "react-bootstrap";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -8,7 +7,7 @@ export const metadata: Metadata = {
 
 const Faq = () => {
   return (
-    <Container>
+    <>
       <h1>Frequently Asked Questions</h1>
 
       <h3>
@@ -89,7 +88,7 @@ const Faq = () => {
           .
         </li>
       </ul>
-    </Container>
+    </>
   );
 };
 

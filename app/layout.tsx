@@ -2,10 +2,12 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Container } from "react-bootstrap";
 
 import "@/app/globals.css";
 import CanyaFooter from "@/components/CanyaFooter";
 import CanyaNavbar from "@/components/CanyaNavbar";
+import CanyaBanner from "@/components/CanyaBanner";
 
 export const metadata: Metadata = {
   title: {
@@ -67,7 +69,8 @@ export default function RootLayout({
       <GoogleTagManager gtmId="GTM-MJZ4QWRJ" />
       <body>
         <CanyaNavbar />
-        {children}
+        <CanyaBanner />
+        <Container className="my-3">{children}</Container>
         <CanyaFooter />
       </body>
     </html>
