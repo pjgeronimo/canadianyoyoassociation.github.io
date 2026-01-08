@@ -34,11 +34,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Canadian Nationals 2026: May 17 in Calgary",
     description: "Canadian National Return Top Championship 2026",
-    url: `https://{process.env.NEXT_PUBLIC_HOST}${process.env.NEXT_PUBLIC_BASE_PATH}`,
+    url: `https://${process.env.NEXT_PUBLIC_HOST}${process.env.NEXT_PUBLIC_BASE_PATH}`,
     siteName: "Canadian Nationals 2026",
     images: [
       {
-        url: `https://{process.env.NEXT_PUBLIC_HOST}${process.env.NEXT_PUBLIC_BASE_PATH}/assets/logos/FBpreview.jpg`,
+        url: `https://${process.env.NEXT_PUBLIC_HOST}${process.env.NEXT_PUBLIC_BASE_PATH}/assets/logos/FBpreview.jpg`,
         alt: "Canadian Nationals 2026",
         width: 600,
         height: 315,
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "Canadian Nationals 2026: May 17 in Calgary",
     description: "Canadian National Return Top Championship 2026",
     images: [
-      `https://{process.env.NEXT_PUBLIC_HOST}${process.env.NEXT_PUBLIC_BASE_PATH}/assets/logos/FBpreview.jpg`,
+      `https://${process.env.NEXT_PUBLIC_HOST}${process.env.NEXT_PUBLIC_BASE_PATH}/assets/logos/FBpreview.jpg`,
     ],
   },
 };
