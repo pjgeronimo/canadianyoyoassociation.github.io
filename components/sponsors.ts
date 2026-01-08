@@ -9,7 +9,7 @@ const sponsorsGold: Sponsor[] = [
   {
     url: "https://www.44emporium.com/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/2025/sponsors/44emporium.png`,
-    name: "44 Emporium",
+    name: "44EMPORIUM",
     size: 450,
   },
   {

@@ -10,7 +10,7 @@ import CanyaNavbar from "@/components/CanyaNavbar";
 export const metadata: Metadata = {
   title: {
     template: "%s - Canadian Nationals 2026",
-    default: "Canadian Nationals 2026: May 19 in Calgary",
+    default: "Canadian Nationals 2026: May 17 in Calgary",
   },
   description: "Canadian National Return Top Championship 2026",
   keywords: [
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     "nationals",
   ],
   openGraph: {
-    title: "Canadian Nationals 2026: May 19 in Calgary",
+    title: "Canadian Nationals 2026: May 17 in Calgary",
     description: "Canadian National Return Top Championship 2026",
-    url: "https://canadanationals.com",
+    url: `https://{process.env.NEXT_PUBLIC_HOST}${process.env.NEXT_PUBLIC_BASE_PATH}`,
     siteName: "Canadian Nationals 2026",
     images: [
       {
-        url: "https://canadanationals.com/2024/fb_preview.jpg",
+        url: `https://{process.env.NEXT_PUBLIC_HOST}${process.env.NEXT_PUBLIC_BASE_PATH}/assets/logos/FBpreview.jpg`,
         alt: "Canadian Nationals 2026",
         width: 600,
         height: 315,
@@ -49,9 +49,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Canadian Nationals 2026: May 19 in Calgary",
+    title: "Canadian Nationals 2026: May 17 in Calgary",
     description: "Canadian National Return Top Championship 2026",
-    images: ["https://canadanationals.com/2024/fb_preview.jpg"],
+    images: [
+      `https://{process.env.NEXT_PUBLIC_HOST}${process.env.NEXT_PUBLIC_BASE_PATH}/assets/logos/FBpreview.jpg`,
+    ],
   },
 };
 

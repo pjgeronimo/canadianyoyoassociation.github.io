@@ -13,7 +13,7 @@ export default function Home() {
         <Row>
           <Col>
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/logos/2026natslogo.png`}
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/2026natslogo.png`}
               alt="2026 Canadian Nationals Logo"
               width="40%"
             />
@@ -53,6 +53,7 @@ export default function Home() {
         <Button
           href="https://linktr.ee/canadianyoyoassociation"
           className="socials-btn"
+          target="_blank"
         >
           @canadianyoyoassociation
         </Button>
