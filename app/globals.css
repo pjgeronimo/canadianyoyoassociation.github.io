@@ -39,8 +39,8 @@ html {
   overflow-y: scroll;
 }
 
-@media (min-width: 992px) {
-  .container {
+#main.container {
+  @media (min-width: 992px) {
     max-width: 800px;
   }
 }
