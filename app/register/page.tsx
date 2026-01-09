@@ -5,7 +5,11 @@ export const metadata: Metadata = {
 };
 
 const Register = () => {
-  return <div>Register</div>;
+  return (
+    <>
+      <h1>Registration coming soon - Stay Tuned!</h1>
+    </>
+  );
 };
 
 export default Register;

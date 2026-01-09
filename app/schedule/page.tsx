@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { Table } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 
 export const metadata: Metadata = {
   title: "Schedule",
@@ -18,10 +19,10 @@ const Schedule = () => {
         and family!!
       </p>
 
-      <p>
+      {/* <p>
         See the <Link href="results">results</Link> page for the order of
         freestyle performances.
-      </p>
+      </p> */}
 
       <Table striped bordered hover>
         <tbody>
@@ -59,13 +60,9 @@ const Schedule = () => {
       <p>
         To receive the latest updates, make sure to follow CANYA on social media
       </p>
-      <Link
-        id="socials-button"
-        href="https://linktr.ee/canadianyoyoassociation"
-        target="_blank"
-      >
+      <Button href="https://linktr.ee/canadianyoyoassociation" target="_blank">
         @canadianyoyoassociation
-      </Link>
+      </Button>
     </>
   );
 };

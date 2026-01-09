@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 const Venue = () => {
   return (
     <>
-      <strong>Updated as of May 15</strong>
+      <strong>Updated as of January 9, 2026</strong>
       <h1>Calgary Central Library</h1>
 
       <p>
