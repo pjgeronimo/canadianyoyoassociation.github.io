@@ -12,7 +12,11 @@ const paths = [
     href: "/schedule",
     active: new Set(["/schedule", "/schedule.html"]),
   },
-  { name: "Rules", href: "/rules", active: new Set(["/rules", "/rules.html"]) },
+  {
+    name: "Format",
+    href: "/format",
+    active: new Set(["/format", "/format.html"]),
+  },
   { name: "FAQ", href: "/faq", active: new Set(["/faq", "/faq.html"]) },
   {
     name: "Register",
@@ -33,7 +37,7 @@ const CanyaNavbar = () => {
             alt="2026 Canadian Nationals Logo"
             height={35}
             // recolour to white
-            style={{ filter: "brightness(0) invert(1)" }}
+            style={{ filter: "brightness(0) invert(1)", marginLeft: "0.5rem" }}
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="canya-navbar-nav" />
