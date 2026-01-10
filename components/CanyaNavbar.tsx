@@ -33,7 +33,7 @@ const CanyaNavbar = () => {
             alt="2026 Canadian Nationals Logo"
             height={35}
             // recolour to white
-            style={{ filter: "brightness(0) invert(1)" }}
+            style={{ filter: "brightness(0) invert(1)", marginLeft: "0.5rem" }}
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="canya-navbar-nav" />
