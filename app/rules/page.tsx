@@ -68,7 +68,7 @@ const Rules = () => {
           will not be scored.
         </li>
       </ul>
-      <Alert>
+      <Alert variant="danger">
         <p>Contestants must upload their own music for their freestyle(s).</p>
         <p>
           Music choices MUST be appropriate for all audiences. Any form of

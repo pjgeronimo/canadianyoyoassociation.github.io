@@ -16,15 +16,17 @@ const Schedule = () => {
         Canadian Nationals is a one-day event starting at 10am and ending at
         5:30pm. The event is open to the public and{" "}
         <strong>FREE to attend</strong> for spectators, so bring your friends
-        and family!!
+        and family!
       </p>
 
-      {/* <p>
+      {/*
+      <p>
         See the <Link href="results">results</Link> page for the order of
         freestyle performances.
-      </p> */}
+      </p>
+      */}
 
-      <Table striped bordered hover>
+      <Table className="my-4" striped bordered hover>
         <tbody>
           <tr>
             <td>10:00</td>
@@ -57,12 +59,21 @@ const Schedule = () => {
         </tbody>
       </Table>
 
-      <p>
-        To receive the latest updates, make sure to follow CANYA on social media
-      </p>
-      <Button href="https://linktr.ee/canadianyoyoassociation" target="_blank">
-        @canadianyoyoassociation
-      </Button>
+      <div className="d-flex" style={{ justifyContent: "center" }}>
+        <p>
+          To receive the latest updates, make sure to follow CANYA on social
+          media
+        </p>
+      </div>
+
+      <div className="d-flex" style={{ justifyContent: "center" }}>
+        <Button
+          href="https://linktr.ee/canadianyoyoassociation"
+          target="_blank"
+        >
+          @canadianyoyoassociation
+        </Button>
+      </div>
     </>
   );
 };

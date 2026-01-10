@@ -10,10 +10,10 @@ const Faq = () => {
     <>
       <h1>Frequently Asked Questions</h1>
 
-      <h3>
+      <h5>
         I don't live in Canada / I recently moved to Canada / I have dual
         citizenship. Can I compete?
-      </h3>
+      </h5>
       <p>
         To compete in Canadian Championship divisions, you must have lived in
         Canada for at least one year. Otherwise, you can only compete in
@@ -35,7 +35,7 @@ const Faq = () => {
         directly.
       </p>
 
-      <h3>Are there age categories?</h3>
+      <h5>Are there age categories?</h5>
       <p>
         There are no age categories in Championship or International divisions,
         in which everyone competes against each other. Children aged 13 or
@@ -43,10 +43,10 @@ const Faq = () => {
         <Link href="format.html">format</Link> page for more details.
       </p>
 
-      <h3>
+      <h5>
         I am entering Championship 1A division. When I upload music, what are
         "prelim" and "final"? Do I need to upload to both?
-      </h3>
+      </h5>
       <p>
         The 1A Championship division is typically so popular (and competitive!)
         that a preliminary round is needed to select only the top contestants to
@@ -61,7 +61,7 @@ const Faq = () => {
         deadline.
       </p>
 
-      <h3>What are seeds?</h3>
+      <h5>What are seeds?</h5>
       <p>
         Seeds are contestants who have done well in past competitions and
         deserve to enter final round(s) without having to advance through

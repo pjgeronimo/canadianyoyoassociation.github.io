@@ -1,10 +1,6 @@
 :root {
   /* headings */
   --bs-heading-color: #880000;
-  h1 {
-    text-align: center;
-    margin-top: 1rem;
-  }
 
   /* links */
   --bs-link-color: #880000;
@@ -15,6 +11,27 @@
   a:hover {
     text-decoration: none;
   }
+}
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+h5 {
+  color: black;
+  font-weight: bold;
+  line-height: 2rem;
+  margin-top: 2rem;
+}
+p {
+  margin-bottom: 0.5rem;
+}
+figure {
+  width: 100%;
+  margin-top: 1rem;
+}
+.img-fluid {
+  width: 100%;
 }
 
 .btn-primary {

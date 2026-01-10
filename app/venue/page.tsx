@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import { Image } from "react-bootstrap";
+import Link from "next/link";
+import { Figure, FigureCaption, FigureImage } from "react-bootstrap";
 
 export const metadata: Metadata = {
   title: "Venue",
@@ -11,30 +12,29 @@ const Venue = () => {
       <strong>Updated as of January 9, 2026</strong>
       <h1>Calgary Central Library</h1>
 
-      <p>
+      <p className="text-center">
         800 3 St SE, Calgary, AB, T2G 2E7
         <br />
-        <a
+        <Link
           href="https://calgarylibrary.ca/read-learn-and-explore/central-library/"
           target="_blank"
         >
           Central Library Website Link
-        </a>
+        </Link>
       </p>
-
-      <div>
-        <a
+      <Figure>
+        <Link
           href="https://calgarylibrary.ca/read-learn-and-explore/central-library/"
           target="_blank"
         >
-          <Image
+          <FigureImage
             src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2024/CL.jpg`}
             alt="Central Library Calgary"
-            width="800"
           />
-        </a>
-        <p>Image Source: Central Library</p>
-      </div>
+        </Link>
+        <FigureCaption>Image Source: Central Library</FigureCaption>
+      </Figure>
+
       <p>
         2026 Canadian Nationals will be at the Central Library. The venue is
         known for its aesthetics and ease of access thanks to its location
@@ -46,26 +46,26 @@ const Venue = () => {
 
       <p>
         See their{" "}
-        <a
+        <Link
           href="https://calgarylibrary.ca/your-library/locations/cent/"
           target="_blank"
         >
           HOURS & LOCATION
-        </a>{" "}
+        </Link>{" "}
         page for the address and directions.
       </p>
 
-      <div>
+      <Figure>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1254.2028367704256!2d-114.05646154578477!3d51.04559677713375!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170003cb69fe3%3A0x65642e5fb9371572!2sCentral%20Library!5e0!3m2!1sen!2sus!4v1710486724626!5m2!1sen!2sus"
-          width="800"
+          width="100%"
           height="400"
           style={{ border: 0 }}
           allowFullScreen={false}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+        />
+      </Figure>
 
       <h1>Patricia A. Whelan Performance Hall</h1>
       <p>
@@ -75,21 +75,23 @@ const Venue = () => {
         performance hall is equipped with over 300 seats and has enough spaces
         for tables with vendors and products.
       </p>
-      <div>
-        <Image
+      <Figure>
+        <FigureImage
           src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2024/PerfHall_sm.jpg`}
           alt="Performance Hall"
         />
-        <p>Image Source: Central Library</p>
-      </div>
+        <FigureCaption>Image Source: Central Library</FigureCaption>
+      </Figure>
       <p>
         Our walkthrough video shows how you can get to the performance hall from
         the City Hall station.
       </p>
 
-      <video width="800" height="450" controls muted>
-        <source src="https://i.imgur.com/wSI96Ma.mp4" type="video/mp4" />
-      </video>
+      <Figure>
+        <video width="100%" controls muted>
+          <source src="https://i.imgur.com/wSI96Ma.mp4" type="video/mp4" />
+        </video>
+      </Figure>
 
       <h1>Parking</h1>
       <p>
@@ -105,18 +107,19 @@ const Venue = () => {
         the image or the link below to open the interactive web map where you
         can click and check the detail for each street parking lane.
       </p>
-      <a href="https://arcg.is/8DLaX" target="_blank">
-        <Image
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2024/parking.png`}
-          alt="Parking Illustration"
-          width="800"
-        />
-      </a>
-      <p>
-        <a href="https://arcg.is/8DLaX" target="_blank">
-          Calgary On-street Parking Map
-        </a>
-      </p>
+      <Figure>
+        <Link href="https://arcg.is/8DLaX" target="_blank">
+          <FigureImage
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2024/parking.png`}
+            alt="Parking Illustration"
+          />
+        </Link>
+        <FigureCaption>
+          <Link href="https://arcg.is/8DLaX" target="_blank">
+            Calgary On-street Parking Map
+          </Link>
+        </FigureCaption>
+      </Figure>
 
       <h1>Weather Forecast</h1>
       <p>
@@ -126,24 +129,25 @@ const Venue = () => {
         Please click on the image or the link below to open the weather forecast
         page.
       </p>
-      <a
-        href="https://weather.gc.ca/city/pages/ab-52_metric_e.html"
-        target="_blank"
-      >
-        <Image
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2024/weather.png`}
-          alt="Weather Forecast"
-          width="800"
-        />
-      </a>
-      <p>
-        <a
+      <Figure>
+        <Link
           href="https://weather.gc.ca/city/pages/ab-52_metric_e.html"
           target="_blank"
         >
-          Calgary Weather Forecast provided by Government of Canada
-        </a>
-      </p>
+          <FigureImage
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2024/weather.png`}
+            alt="Weather Forecast"
+          />
+        </Link>
+        <FigureCaption>
+          <Link
+            href="https://weather.gc.ca/city/pages/ab-52_metric_e.html"
+            target="_blank"
+          >
+            Calgary Weather Forecast provided by Government of Canada
+          </Link>
+        </FigureCaption>
+      </Figure>
     </>
   );
 };
