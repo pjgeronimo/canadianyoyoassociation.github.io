@@ -3,10 +3,10 @@ import Link from "next/link";
 import { Alert, Table } from "react-bootstrap";
 
 export const metadata: Metadata = {
-  title: "Rules",
+  title: "Format",
 };
 
-const Rules = () => {
+export default function Format() {
   return (
     <>
       <h1>Canadian Championship Division Freestyles</h1>
@@ -156,7 +156,6 @@ const Rules = () => {
         <Link href="https://iyyf.org/wyyc2025-rules/2025-freestyle-music/">
           IYYF's Guidelines for Music Choice
         </Link>
-        .
       </p>
       <p>
         Winners of the Junior Division will not be seeded to the 2026 World
@@ -164,6 +163,4 @@ const Rules = () => {
       </p>
     </>
   );
-};
-
-export default Rules;
+}

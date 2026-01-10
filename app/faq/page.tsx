@@ -40,7 +40,7 @@ const Faq = () => {
         There are no age categories in Championship or International divisions,
         in which everyone competes against each other. Children aged 13 or
         younger may enter Junior division. See the{" "}
-        <Link href="format.html">format</Link> page for more details.
+        <Link href="/format">format</Link> page for more details.
       </p>
 
       <h5>

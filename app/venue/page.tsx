@@ -121,33 +121,35 @@ const Venue = () => {
         </FigureCaption>
       </Figure>
 
-      <h1>Weather Forecast</h1>
-      <p>
-        As of May 15th, it is expected that Calgary will have a temperature
-        range that is fairly low, swinging between 12C (54F) and as low as 2C
-        (36F) over the weekend. Some layers and a jacket will be recommended.
-        Please click on the image or the link below to open the weather forecast
-        page.
-      </p>
-      <Figure>
-        <Link
-          href="https://weather.gc.ca/city/pages/ab-52_metric_e.html"
-          target="_blank"
-        >
-          <FigureImage
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2024/weather.png`}
-            alt="Weather Forecast"
-          />
-        </Link>
-        <FigureCaption>
-          <Link
-            href="https://weather.gc.ca/city/pages/ab-52_metric_e.html"
-            target="_blank"
-          >
-            Calgary Weather Forecast provided by Government of Canada
-          </Link>
-        </FigureCaption>
-      </Figure>
+      {
+        // <h1>Weather Forecast</h1>
+        // <p>
+        //   As of May 15th, it is expected that Calgary will have a temperature
+        //   range that is fairly low, swinging between 12C (54F) and as low as 2C
+        //   (36F) over the weekend. Some layers and a jacket will be recommended.
+        //   Please click on the image or the link below to open the weather forecast
+        //   page.
+        // </p>
+        // <Figure>
+        //   <Link
+        //     href="https://weather.gc.ca/city/pages/ab-52_metric_e.html"
+        //     target="_blank"
+        //   >
+        //     <FigureImage
+        //       src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2024/weather.png`}
+        //       alt="Weather Forecast"
+        //     />
+        //   </Link>
+        //   <FigureCaption>
+        //     <Link
+        //       href="https://weather.gc.ca/city/pages/ab-52_metric_e.html"
+        //       target="_blank"
+        //     >
+        //       Calgary Weather Forecast provided by Government of Canada
+        //     </Link>
+        //   </FigureCaption>
+        // </Figure>
+      }
     </>
   );
 };

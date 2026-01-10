@@ -12,7 +12,11 @@ const paths = [
     href: "/schedule",
     active: new Set(["/schedule", "/schedule.html"]),
   },
-  { name: "Rules", href: "/rules", active: new Set(["/rules", "/rules.html"]) },
+  {
+    name: "Format",
+    href: "/format",
+    active: new Set(["/format", "/format.html"]),
+  },
   { name: "FAQ", href: "/faq", active: new Set(["/faq", "/faq.html"]) },
   {
     name: "Register",
