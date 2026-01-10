@@ -84,17 +84,19 @@ export default function CanyaFooter() {
   }, [pathname]);
 
   return (
-    <footer>
-      <Container>
-        <Row className="text-center">
-          {
-            // Distinguish between home page and other pages
-            new Set(["/", "/index", "/index.html"]).has(pathname)
-              ? renderSponsorsLarge(gold, silver, windowWidth)
-              : renderSponsorsSmall(gold)
-          }
-        </Row>
-      </Container>
-    </footer>
+    <></>
+    // TODO: enable sponsor when confirmed
+    // <footer>
+    //   <Container>
+    //     <Row className="text-center">
+    //       {
+    //         // Distinguish between home page and other pages
+    //         new Set(["/", "/index", "/index.html"]).has(pathname)
+    //           ? renderSponsorsLarge(gold, silver, windowWidth)
+    //           : renderSponsorsSmall(gold)
+    //       }
+    //     </Row>
+    //   </Container>
+    // </footer>
   );
 }

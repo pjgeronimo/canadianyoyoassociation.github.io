@@ -73,7 +73,7 @@ export default function RootLayout({
         <Container id="main" className="my-3">
           {children}
         </Container>
-        {/* <CanyaFooter /> */}
+        <CanyaFooter />
       </body>
     </html>
   );

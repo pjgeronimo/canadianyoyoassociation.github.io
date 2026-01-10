@@ -21,7 +21,7 @@ const Rules = () => {
         Each contestant will perform a freestyle routine choreographed to music
         up to the for the following lengths in each division/round:
       </p>
-      <Table>
+      <Table className="my-4" striped bordered hover>
         <thead>
           <tr>
             <th>Division</th>

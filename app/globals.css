@@ -33,6 +33,9 @@ figure {
 .img-fluid {
   width: 100%;
 }
+li {
+  margin-bottom: 0.5rem;
+}
 
 .btn-primary {
   --bs-btn-bg: #880000;
