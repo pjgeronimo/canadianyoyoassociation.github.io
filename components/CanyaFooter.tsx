@@ -24,7 +24,12 @@ function shuffleArray(arr: any[]) {
 
 function renderSponsor(sponsor: Sponsor, scale: number, className: string) {
   return (
-    <Link key={sponsor.name} href={sponsor.url} target="_blank">
+    <Link
+      key={sponsor.name}
+      className={className}
+      href={sponsor.url}
+      target="_blank"
+    >
       <Image
         src={sponsor.img}
         alt={sponsor.name}
@@ -51,7 +56,7 @@ function renderSponsorsLarge(
   return (
     <Col>
       <h1>Sponsors</h1>
-      <div>
+      <div className="mb-4">
         {gold.map((sponsor) => renderSponsor(sponsor, scaleGold, "large-gold"))}
       </div>
       <div>
@@ -86,7 +91,7 @@ export default function CanyaFooter() {
   return (
     <></>
     // TODO: enable sponsor when confirmed
-    // <footer>
+    // <footer className="bg-light py-4 mt-4">
     //   <Container>
     //     <Row className="text-center">
     //       {

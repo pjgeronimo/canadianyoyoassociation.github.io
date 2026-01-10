@@ -59,18 +59,34 @@ html {
   overflow-y: scroll;
 }
 
+#banner-logo {
+  @media (min-width: 992px) {
+    max-width: 450px;
+  }
+  /* max-width: 400px; */
+  max-width: 75%;
+}
+
 #main.container {
   @media (min-width: 992px) {
     max-width: 800px;
   }
 }
 
-footer .large-gold {
-  margin: 20px;
-}
-footer .large-silver {
-  margin: 15px;
-}
-footer .small-gold {
-  margin: 10px;
+footer {
+  .large-gold {
+    margin: 20px;
+  }
+  .large-silver {
+    margin: 15px;
+  }
+
+  .small-gold {
+    a {
+      height: 90px;
+    }
+    img {
+      margin: 10px;
+    }
+  }
 }

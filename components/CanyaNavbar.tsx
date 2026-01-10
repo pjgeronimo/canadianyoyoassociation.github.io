@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Image, Nav, Navbar } from "react-bootstrap";
 
 const paths = [
   { name: "About", href: "/", active: new Set(["/", "/index", "/index.html"]) },
@@ -25,13 +25,19 @@ const CanyaNavbar = () => {
   const pathname = usePathname();
 
   return (
-    <Navbar expand="lg" className="navbar" variant="dark">
+    <Navbar collapseOnSelect expand="lg" variant="dark">
       <Container>
         <Navbar.Brand href="/" className="navbar-brand" as={Link}>
-          #CanadaNats2026
+          <Image
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/canya-logo.png`}
+            alt="2026 Canadian Nationals Logo"
+            height={35}
+            // recolour to white
+            style={{ filter: "brightness(0) invert(1)" }}
+          />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Toggle aria-controls="canya-navbar-nav" />
+        <Navbar.Collapse id="canya-navbar-nav">
           <Nav className="me-auto">
             {paths.map((path) => (
               <Nav.Link
