@@ -19,7 +19,7 @@ export default function Format() {
       <p>Winners will be seeded to the 2026 World Yo-yo contest.</p>
       <p>
         Each contestant will perform a freestyle routine choreographed to music
-        up to the for the following lengths in each division/round:
+        up to the following lengths in each division/round://Previously "up to the for the following lengths in each division/round:"
       </p>
       <Table className="my-4" striped bordered hover>
         <thead>
@@ -84,7 +84,7 @@ export default function Format() {
       </Alert>
       <h1>International Division Freestyles</h1>
       <p>
-        Non Canadian citizens or residents are welcome to compete in the
+        Non-Canadian citizens or residents are welcome to compete in the//Previously "Non Canadian"
         International Division. Please see the <Link href="/faq">FAQ</Link> to
         determine if you are eligible to compete in the International Division.
       </p>
@@ -125,7 +125,7 @@ export default function Format() {
           Have never advanced to a 1A finals of any National-level competition
         </li>
         <li>
-          Not also enter a Canadian Championship or International division
+          Not also enter a Canadian Championship Division or International Division//Previuosly "Not also enter a Canadian Championship or International division"
         </li>
       </ul>
       <p>
